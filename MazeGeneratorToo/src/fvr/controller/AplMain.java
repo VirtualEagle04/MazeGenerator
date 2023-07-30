@@ -8,5 +8,5 @@ public class AplMain {
 		c.run();
 		
 	}
-	
+
 }
