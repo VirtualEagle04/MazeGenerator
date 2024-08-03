@@ -121,15 +121,15 @@ public class HuntKill {
 			visitedNeighbors.add(new Cell(currentCell.posRow - 1, currentCell.posCol));
 		}
 		// Bottom
-		if (validateCoordsVisited(currentCell.posRow + 1, currentCell.posCol)) {
+		else if (validateCoordsVisited(currentCell.posRow + 1, currentCell.posCol)) {
 			visitedNeighbors.add(new Cell(currentCell.posRow + 1, currentCell.posCol));
 		}
 		// Left
-		if (validateCoordsVisited(currentCell.posRow, currentCell.posCol - 1)) {
+		else if (validateCoordsVisited(currentCell.posRow, currentCell.posCol - 1)) {
 			visitedNeighbors.add(new Cell(currentCell.posRow, currentCell.posCol - 1));
 		}
 		// Right
-		if (validateCoordsVisited(currentCell.posRow, currentCell.posCol + 1)) {
+		else if (validateCoordsVisited(currentCell.posRow, currentCell.posCol + 1)) {
 			visitedNeighbors.add(new Cell(currentCell.posRow, currentCell.posCol + 1));
 		}
 
